@@ -1,3 +1,4 @@
+# I AM MAKING CHANGES!!!
 # BIG PICTURE: to try to manipulate/annoy the answer of the user to be "GOODBYE!" and then "GOODBYE!" again
 
 # the interface will be a simple prompt to enter text.
