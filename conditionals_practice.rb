@@ -1,4 +1,4 @@
-name = "shithead"
+name = "Dude"
 
 if name == "Randy"
   puts "Hello, Randy"
