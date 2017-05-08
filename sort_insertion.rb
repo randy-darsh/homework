@@ -1,5 +1,5 @@
 def insertion_sort(array)
-  1.upto(index - 1) do |i|
+  (1..array.length-1).each do |i|
     value = array.delete_at(i)
 
     insertion_index = i
