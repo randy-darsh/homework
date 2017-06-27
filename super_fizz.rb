@@ -8,10 +8,22 @@
 # if it's evenly divisible by 5, print Buzz
 # if it's evenly divisible by 7, print Super
 # otherwise just print number
-for y in [7,5,3]
-  number_count = 0
-  for x in 0..1000
-    number_count += 1 if x % y == 0
+(0..1000).each do |num|
+  if num % 3 == 0 && num % 5 == 0 && num % 7 == 0
+    puts "SuperFizzBuzz"
+  elsif num % 3 == 0 && num % 7 == 0
+    puts "SuperFizz"
+  elsif num % 5 == 0 && num % 7 == 0
+    puts "SuperBuzz"
+  elsif num % 3 == 0 && num % 5 == 0
+    puts "FizzBuzz"
+  elsif num % 3 == 0
+    puts "Fizz"
+  elsif num % 5 == 0
+    puts "Buzz"
+  elsif num % 7 == 0
+    puts "Super"
+  else
+    puts num
   end
-  puts "There are #{number_count} numbers divisible by #{y}, from 0 to 1000"
 end
